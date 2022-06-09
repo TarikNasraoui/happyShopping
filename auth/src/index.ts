@@ -3,6 +3,7 @@ import { app } from "./app";
 import dotenv from "dotenv";
 dotenv.config();
 const start = async () => {
+  console.log("start up.....");
   if (!process.env.JWT_KEY) {
     throw new Error("JWT_KEY must be defined");
   }
